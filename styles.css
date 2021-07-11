@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 *,
 *::before,
 *::after {
@@ -8,16 +10,36 @@
 }
 
 body {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   place-content: center;
   min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto;
+  text-transform: capitalize;
 }
 
 .container {
   position: relative;
   width: 65vw;
   height: 50vh;
+  background-color: yellowgreen;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container__text {
