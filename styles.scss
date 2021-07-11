@@ -1,0 +1,47 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    position: relative;
+    width: 65vw;
+    height: 50vh;
+
+    &__text {
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20vh;
+    }
+}
+
+#btn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -20%);
+
+    display: block;
+    padding: .4rem .6rem;
+    background-color: chocolate;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+#btn:hover {
+    transition: background-color .3s ease-in;
+    background-color: rgb(172, 85, 23);
+}
+
